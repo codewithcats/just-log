@@ -1,7 +1,7 @@
 FROM golang:1.12.0-stretch as build
 
 WORKDIR /code
-COPY go.mod go.sum ./
+COPY go.mod ./
 RUN go mod download
 COPY . .
 
